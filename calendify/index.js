@@ -233,12 +233,12 @@ app.get('/home', function(req, res) {
         if (todotimetable) {
 
             res.render('home', {
-                title: 'TODO WEB APP',
+                title: 'Calendify | Home',
                 todo: todotimetable
             });
         } else {
             return res.render('signup', {
-                title: 'TODO WEB APP',
+                title: 'Calendify | Sign Up',
                 error: 'Sign Up first'
             })
         }
