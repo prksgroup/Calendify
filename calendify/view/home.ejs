@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%=title%>
+    </title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div style="display: flex;flex-direction: row;height: auto;">
+        <div style="margin-left: 20%;margin-right: 30px;margin-top: 50px; width: auto;height: auto;">
+            <form method="POST" id="form-todo">
+                <h1>Calendify</h1>
+                <input id="description" type="text" name="description" placeholder="Event Title">
+                <select name="category" id="select-category">
+                <option value="">Choose Category</option>
+                <option value="Personel">Personel</option>
+                <option value="School">School</option>
+                <option value="Academics">Academics</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Home">Home</option>
+                <option value="Other">Other</option>
+               
+            </select>
+                <input id="date" type="date" name="date">
+                <!--Button to add task-->
+                <div>
+
+
+                    <div id="main-time-div">
+                        <div>
+                            <strong style="color: white;">Available Hours</strong>
+                        </div>
+                        <br>
+
+                        <div id="select-time">
+                            <select name="timefrom" id="option-time">
+                        <option value="12:00AM">12:00AM</option>
+                        <option value="01:00AM">01:00AM</option>
+                        <option value="02:00AM">02:00AM</option>
+                        <option value="03:00AM">03:00AM</option>
+                        <option value="04:00AM">04:00AM</option>
+                        <option value="05:00AM">05:00AM</option>
+                        <option value="06:00AM">06:00AM</option>
+                        <option value="07:00AM">07:00AM</option>
+                        <option value="08:00AM">08:00AM</option>
+                        <option value="09:00AM">09:00AM</option>
+                        <option value="10:00AM">10:00AM</option>
+                        <option value="11:00AM">11:00AM</option>
+                        <option value="12:00PM">12:00PM</option>
+                        <option value="13:00PM">01:00PM</option>
+                        <option value="14:00PM">02:00PM</option>
+                        <option value="15:00PM">03:00PM</option>
+                        <option value="16:00PM">04:00PM</option>
+                        <option value="17:00PM">05:00PM</option>
+                        <option value="18:00PM">06:00PM</option>
+                        <option value="19:00PM">07:00PM</option>
+                        <option value="20:00PM">08:00PM</option>
+                        <option value="21:00PM">09:00PM</option>
+                        <option value="22:00PM">10:00PM</option>
+                        <option value="23:00PM">11:00PM</option>
+                    </select>
+                            <div style="margin-top: 20px;margin-left: 30px;margin-right: 30px;"><strong style="color: white;">TO</strong></div>
+                            <select name="timeto" id="option-time">
+                            <option value="12:00AM">12:00AM</option>
+                            <option value="01:00AM">01:00AM</option>
+                            <option value="02:00AM">02:00AM</option>
+                            <option value="03:00AM">03:00AM</option>
+                            <option value="04:00AM">04:00AM</option>
+                            <option value="05:00AM">05:00AM</option>
+                            <option value="06:00AM">06:00AM</option>
+                            <option value="07:00AM">07:00AM</option>
+                            <option value="08:00AM">08:00AM</option>
+                            <option value="09:00AM">09:00AM</option>
+                            <option value="10:00AM">10:00AM</option>
+                            <option value="11:00AM">11:00AM</option>
+                            <option value="12:00PM">12:00PM</option>
+                            <option value="13:00PM">01:00PM</option>
+                            <option value="14:00PM">02:00PM</option>
+                            <option value="15:00PM">03:00PM</option>
+                            <option value="16:00PM">04:00PM</option>
+                            <option value="17:00PM">05:00PM</option>
+                            <option value="18:00PM">06:00PM</option>
+                            <option value="19:00PM">07:00PM</option>
+                            <option value="20:00PM">08:00PM</option>
+                            <option value="21:00PM">09:00PM</option>
+                            <option value="22:00PM">10:00PM</option>
+                            <option value="23:00PM">11:00PM</option>
+                        </select>
+                        </div>
+
+                    </div>
+                    <div id="week-days">
+                        <div>
+                            <strong style="color: white;">Available Days</strong>
+                        </div>
+                        <div id="weekdays">
+                            <input type="checkbox" id="sun" name="availableday" value="Sunday">
+                            <label for="sun">SUN</label>
+                            <input type="checkbox" id="MON" name="availableday" value="Monday">
+                            <label for="MON">MON</label>
+                            <input type="checkbox" id="TUE" name="availableday" value="Tuesday">
+                            <label for="TUE">TUE</label>
+                            <input type="checkbox" id="WED" name="availableday" value="Wednesday">
+                            <label for="WED">WED</label>
+                            <input type="checkbox" id="THU" name="availableday" value="Thursday">
+                            <label for="THU">THU</label>
+                            <input type="checkbox" id="FRI" name="availableday" value="Friday">
+                            <label for="FRI">FRI</label>
+                            <input type="checkbox" id="SAT" name="availableday" value="Saturday">
+                            <label for="SAT">SAT</label>
+                        </div>
+                    </div>
+                    <div style="border-bottom: 1px solid rgba(255, 0, 0, 0.767);height: 90px;border-left: 1px solid rgba(255, 0, 0, 0.767);border-right: 1px solid rgba(255, 0, 0, 0.767);">
+
+                        <button type="submit" id="addtask-button" formaction="/timetable"><i class="fas fa-plus"></i> ADD TASK</button>
+                        <!--Button to delete task-->
+                        <button type="submit" id="deletetask-button" formaction="/removelist"><i class="fas fa-trash-alt"></i> DELETE TASK</button>
+                    </div>
+
+                </div>
+                <!--Ordered list to display user inputed data after fetched from the userschema-->
+                <ol id="adding-items">
+                    <%
+                for(let i=0;i<todo.length;i++){%>
+                        <li>
+                            <!--Checkbox to be marked if user -->
+                            <input type="checkbox" id="checkbox-id" name="task" value="<%=todo[i].id%>">
+
+                            <div id="list-div">
+
+                                Event Title :
+
+
+                                <%=todo[i].description%>
+
+                                    <br>
+                                    <div style="font-size: 12px;margin-top: 5px;"><i class="fas fa-calendar-day"></i>
+                                        <%=todo[i].date%> <br><strong>Days : </strong>
+                                            <%=todo[i].availableday%>
+                                    </div>
+                                    <div style="font-size: 12px;margin-top: 5px;">Time :
+                                        <%=todo[i].timefrom%> <strong>TO</strong>
+                                            <%=todo[i].timeto%>
+                                    </div>
+
+
+
+                            </div>
+                            <div id="category-div">
+                                <button style="margin-right:0px;width:100px;height:30px;color: black;background-color: white;font-family: sans-serif;border-style: none;margin-left: 10px;font-weight: bold">
+                                <%=todo[i].category%>
+                            </button>
+                            </div>
+                        </li>
+                        <% } 
+                    %>
+
+                </ol>
+
+            </form>
+        </div>
+        <div style="width: auto;height: auto;margin-left: 20%;">
+            <iframe src="https://calendar.google.com/calendar/htmlembed?src=addressbook%23contacts%40group.v.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0;margin-top: 50px;" width="300" height="700" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <!--Form to take inputs from the user and delete task as marked by the user-->
+    <!--Method used is POST and action as per button for adding task action="/timetable" and for deleting task action="/removelist"-->
+
+    <!-- <button><a href="/home/profile">Profile</a></button> -->
+    <button id="logout-button"><a href="/logout">Log Out</a></button>
+
+
+
+</body>
+
+</html>

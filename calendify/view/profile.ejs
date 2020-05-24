@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.952);
+        }
+        
+        #sign-up {
+            width: 100%;
+            height: 100px;
+            background-color: rgba(255, 0, 0, 0.582);
+        }
+        
+        #sign-up div {
+            border-top: 1px solid black;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        #sign-up div p {
+            font-size: 25px;
+        }
+        
+        #footer-signup {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        #footer-signup div {
+            /* border: 1px solid white; */
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        #footer-signup div p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="sign-up">
+        <div>
+            <p>Calendify</p>
+            <h6 style="color: white;font-family: Arial, Helvetica, sans-serif;">Create events as per available hours</h6>
+        </div>
+
+
+
+    </div>
+    <h1 style="margin-left: 50px;color: white;">Profile</h1>
+
+    <p style="color: white;font-size: 20px;margin-left: 50px;">Email:
+        <%=prof.email%>
+    </p>
+    <p style="color: white;font-size: 20px;margin-left: 50px;"> Name:
+        <%=prof.name%>
+    </p>
+    <button style="width: 100px;height: 40px;background-color: rgba(255, 0, 0, 0.671);text-decoration: none;color: white;margin-left: 50px;"><a href="/home" value="<%=prof._id%>" style="color: white;">Add Events</a></button>
+
+    <footer id="footer-signup">
+        <div id="sign-up">
+            <div>
+                <p>Calendify</p>
+                <h5 style="color: white;font-family: Arial, Helvetica, sans-serif;">Copyright All Rights Reserved @2020</h5>
+            </div>
+
+
+
+        </div>
+    </footer>
+    <!-- <p>Email: <%=prof.email%></p> -->
+</body>
+
+</html>

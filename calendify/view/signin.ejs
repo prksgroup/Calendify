@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgba(0, 0, 0, 0.925);
+        }
+        
+        #sign-up {
+            width: 100%;
+            height: 100px;
+            background-color: rgba(255, 0, 0, 0.582);
+        }
+        
+        #sign-up div {
+            border-top: 1px solid black;
+            align-items: center;
+            color: black;
+            text-align: center;
+        }
+        
+        #sign-up div p {
+            font-size: 25px;
+            color: white;
+        }
+        
+        #footer-signup {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        #footer-signup div {
+            /* border: 1px solid white; */
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        #footer-signup div p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+        
+        #sign-up-form {
+            /* border: 1px solid black; */
+            margin: 50px;
+        }
+        
+        #sign-up-form input {
+            width: 300px;
+            height: 34px;
+            border-style: none;
+            background-color: whitesmoke;
+            color: black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sign-up">
+        <div>
+            <p>Calendify</p>
+            <h6 style="color: white;font-family: Arial, Helvetica, sans-serif;">Create events as per available hours</h6>
+        </div>
+
+
+
+    </div>
+    <h1 style="margin-left: 50px;color: white;">Sign In</h1>
+
+
+
+    <form action="/profile/signin" method="GET" id="sign-up-form">
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <input type="password" name="password" placeholder="Password" required>
+        <br><br>
+        <button type="submit" style="width: 100px;height: 44px;background-color: rgba(255, 0, 0, 0.568);color: white;border-style: none;padding: 5px;">Sign In</button>
+
+    </form>
+    <div>
+
+    </div>
+
+    <footer id="footer-signup">
+        <div id="sign-up">
+            <div>
+                <p>Calendify</p>
+                <h4 style="color: white;font-family: Arial, Helvetica, sans-serif;">Copyright All Rights Reserved @2020</h4>
+                <h6 style="color: white;font-family: Arial, Helvetica, sans-serif;">PRS</h6>
+
+            </div>
+
+
+
+        </div>
+    </footer>
+</body>
+
+</html>

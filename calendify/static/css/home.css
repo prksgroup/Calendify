@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 35%;
+    color: white;
+}
+
+
+/*Form and its parts styles*/
+
+#form-todo {
+    position: relative;
+    width: 600px;
+    height: auto;
+    margin-top: 2%;
+    left: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: white; */
+    border-top: 10px solid rgba(255, 0, 0, 0.726);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#description {
+    width: 100%;
+    height: 50px;
+}
+
+#select-category {
+    width: 50%;
+    height: 50px;
+}
+
+#main-time-div {
+    border: 1px solid black;
+    margin-top: 20px;
+    background-color: rgba(255, 0, 0, 0.76);
+    height: 120px;
+}
+
+
+/* #main-time-div #select-time #option-time{
+    width: ;
+} */
+
+#select-time {
+    display: flex;
+    flex-direction: row;
+}
+
+#date {
+    width: 49%;
+    height: 46px;
+}
+
+#option-time {
+    width: 258px;
+    height: 50px;
+}
+
+#week-days {
+    margin-top: 0px;
+    border: 1px solid black;
+    background-color: rgba(255, 0, 0, 0.685);
+}
+
+#weekdays {
+    width: auto;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+#weekdays input {
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+#weekdays label {
+    font-size: 22px;
+}
+
+
+/*Add task button styles*/
+
+#addtask-button {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.582);
+    ;
+    font-family: sans-serif;
+    width: 100px;
+    height: 50px;
+    margin-right: 5px;
+    border-style: none;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+#addtask-button:hover {
+    background: linear-gradient(black, rgba(255, 0, 0, 0.582));
+}
+
+
+/*Delete task button styles*/
+
+#deletetask-button {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.582);
+    font-family: sans-serif;
+    width: 150px;
+    height: 50px;
+    border-style: none;
+    margin-top: 20px;
+}
+
+#deletetask-button:hover {
+    background: linear-gradient(black, rgba(255, 0, 0, 0.582));
+}
+
+
+/*Ordere list styles*/
+
+#adding-items {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    list-style: none;
+    padding: 0px;
+}
+
+#adding-items li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
+    background: linear-gradient(rgba(255, 0, 0, 0.753), black);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#checkbox-id {
+    width: 20px;
+    height: 20px;
+}
+
+#list-div {
+    color: white;
+    font-family: sans-serif;
+    margin-left: 0px;
+}
+
+#category-div {
+    width: 200px;
+    height: auto;
+}
+
+#logout-button {
+    position: fixed;
+    float: right;
+    top: 0;
+    right: 0;
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#logout-button a {
+    color: white;
+    text-decoration: none;
+}
